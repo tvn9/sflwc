@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <!--attributes are the variables in our components-->
+    <aura:attribute name="input1" type="integer"></aura:attribute>
+    <aura:attribute name="input2" type="integer"></aura:attribute>
+    <aura:attribute name="result" type="integer" default="0.00"></aura:attribute>
+    
+    <lightning:card class="slds-p-horizontal-small">
+        <div class="card-size">
+            <lightning:input class="label-custom" aura:id="add" label="Enter first number" value="{!v.input1}" type="number"></lightning:input>
+            <br/>
+            <lightning:input class="label-custom" label="Enter second number" value="{!v.input2}" type="number"></lightning:input>
+            <br/>
+            
+            <div class="card-btn">
+                <lightning:button onclick="{!c.add}">
+                    <lightning:icon iconName="utility:add"></lightning:icon>
+                </lightning:button>
+                <lightning:button onclick="{!c.subtract}">
+                    <lightning:icon iconName="utility:dash"></lightning:icon>
+                </lightning:button>
+                <lightning:button onclick="{!c.multiply}">
+                    <lightning:icon iconName="utility:close"></lightning:icon>
+                </lightning:button>
+                <lightning:button onclick="{!c.devide}">
+                    <lightning:icon iconName="utility:percent"></lightning:icon>
+                </lightning:button>
+            </div>
+            <br/>
+            <lightning:formattedNumber class="result" value="{!v.result}"></lightning:formattedNumber>
+        </div>
+    </lightning:card>
+</aura:component>
