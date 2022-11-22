@@ -1,5 +1,5 @@
 {
-  "orgName": "Thanh Nguyen",
+  "orgName": "tn company",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
   "hasSampleData": true,
@@ -8,7 +8,7 @@
       "enableS1DesktopEnabled": true
     },
     "mobileSettings": {
-      "enableS1EncryptedStoragePref2": true
+      "enableS1EncryptedStoragePref2": true 
     }
   }
 }
